@@ -1,0 +1,166 @@
+body {
+	position: relative;
+	font-family: Verdana;
+	#text-align: center;
+	margin: 0px;
+	padding: 0px;
+	#padding-left: 40px;
+	color: black;
+}
+
+#content{
+	position: relative;
+	text-align: center;
+	background-image: url('file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/pictures/background1.png');
+	background-size: 100%;
+	background-repeat:no-repeat;
+	padding-left: 20px;
+	padding-top: 100px;
+	padding-right: 1500px 700px;
+	height: 650px;
+}
+
+#header {
+	display: inline;
+	position: relative;
+	padding-top: 10px;
+	margin-top: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	height: 40px;
+	#text-align: left;
+	background-color: white;
+	#float: left;
+}
+
+h1{
+	text-align: center;
+	margin-top: -30px;
+	margin-bottom: 0px;
+	font-size: 30px;
+}
+h2{
+	text-align:center;
+	margin-top: 0;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	font-size: 20px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+
+	
+}
+ul{
+	display:inline;
+	line-height:8px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+li{
+	#display: inline;
+	#float:center;
+}
+li a{
+	color:black;
+	#text-decoration: underline;
+	display:block;
+	text-align:center;
+	padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#search input[type=text] {
+    width: 200px;
+	box-sizing: border-box;
+    border: 2px solid #black;
+    border-radius: 4px;
+    font-size: 15px;
+    #background-color: black;
+    background-image: url('file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/pictures/searchicon.png');
+    background-position: 150px ; 
+	background-size: 20%;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+#search input[type=text]:focus {
+	background-color: white;
+	background-image: none;
+    width: 45%;
+}
+
+#tab {
+	max-width:550px; 
+	width:100%; 
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	height: 300px;
+}
+
+#tab input[type=radio] 
+{
+	display:none;
+}
+
+#tab label {
+	display:block; 
+	float: left;
+	width: 23.333%;
+	color: black;
+	font-size: 15px;
+	padding: 5%;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	font-family: Verdana;
+	background: white;
+}
+
+#tab .tab_content {
+	background: #fff; 
+	width: 90%;
+	display: none;
+	padding: 5%;
+	float: left;
+}
+
+#tab [id^="tab"]:checked + label{
+	background: #80b3ff;
+	color: #fff;
+}
+
+#tab1:checked ~ #tab-content1, 
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3{
+	display:block;
+}
+
+
+
+
+

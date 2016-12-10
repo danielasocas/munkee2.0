@@ -1,0 +1,122 @@
+body {
+	position: relative;
+	font-family: Verdana;
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	#background-color: #d9d9d9;
+}
+
+
+
+#logo{
+	padding-top: 10px;
+	padding-left: 400px;
+	text-align: center;
+	float: center;
+	display:inline;
+}
+
+#flags{
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 10px;
+	display:inline;
+}
+
+#links{
+	padding-top: 30px;
+	text-align: right;
+	float:right;
+	padding-right: 10px;
+}
+
+#links a{
+	color: black;
+	text-decoration: none;
+}
+
+#links a:hover{
+	background-color: none;
+	text-decoration: underline;
+}
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #4c4c4c;
+  font-family: Verdana;
+  text-align: right;
+  margin-top:-40px;
+  margin-bottom: 0px;
+}
+
+
+h2{
+  font-size: 25px;
+  font-weight: 200;
+  color: #4c4c4c;
+  font-family: Verdana;
+  text-align: right;
+  margin-bottom: 0px;
+  #margin-top:10px;
+  padding-bottom: 10px;
+}
+
+h3{
+  font-size: 15px;
+  font-weight: 100;
+  color: #4c4c4c;
+  font-family: Verdana;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top:10px;
+  padding-bottom: 10px;
+}
+
+#content{
+	position: relative;
+	text-align: center;
+	background-color: #d9d9d9;
+	background-image: url('file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/pictures/tables.jpg');
+	background-size: 30%;
+	background-repeat:no-repeat;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 1500px 700px;
+	height: 650px;
+}
+
+ul.tabs{ 
+    position: relative;
+	#background-color: #d9d9d9;
+	margin-bottom: 10px;
+}
+
+ul.tabs li {
+    float: left;
+}
+
+ul.tabs li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size:18px;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.tabs li a:focus, .active {
+background-color:#111;
+font-color: #F0F8FF;
+}
+
+.tabcontent{
+	display: none;
+	padding: 6px 12px;
+}

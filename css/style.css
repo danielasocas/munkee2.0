@@ -1,0 +1,97 @@
+head {
+	text-align: right;
+	float: right;
+	position: right;
+}
+
+body {
+	position: relative;
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+	padding-left: 40px;
+	color: black;
+}
+
+h1{
+	text-align: center;
+	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 35px;
+}
+h2{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 20px;
+}
+#language{
+	text-align: right;
+	background-color: #66ff66;
+}
+#logo{
+	position: relative;
+	#margin-bottom: 0;
+	background-color: #66ff66;
+	color: black;
+	height: 250px;
+	padding-top: 50px;
+	padding-left: 20px;
+}
+
+
+
+#menu{
+	position:relative;
+	text-align: left-side;
+	background-color: #66ff66;
+	font-color:black;
+	margin-bottom:0;
+}
+ul{
+	line-height:8px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+li{
+	#display: inline;
+	float:right;
+}
+li a{
+	color:black;
+	text-decoration:none;
+	display:block;
+	text-align:center;
+	padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #555;
+    color: black;
+}
+
+#content{
+	position: relative;
+	background-color:white;
+	padding-left: 20px;
+	padding-top: 1px;
+	padding-right: 500px;
+}
+
+
+.news-item h3{
+	font-size: 30px;
+	padding-top: -20px;
+}
+
+.news-item img{
+	float: right;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.news-item .introduction{
+	font-style:italic;
+}
