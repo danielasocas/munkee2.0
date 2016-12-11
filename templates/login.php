@@ -8,7 +8,7 @@
 	<div id="body">
 		<div class="loginBox">
 		<h2>Login</h2>
-		<?php
+		
 		<form action="action_login.php" method="post">
 		<hr>
 		<input type="text" name="name" id="name" placeholder="Email" required/>
@@ -17,5 +17,5 @@
 			<a href="#" class="button">Login</a>
 			</div>
 		</form>
-		?>
+		
 		</div>
