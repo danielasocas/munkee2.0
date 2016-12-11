@@ -1,54 +1,151 @@
-head {
-	text-align: right;
-	float: right;
-	position: right;
+body,
+input,
+textarea,
+select {
+  font-family: Verdana;
+  font-size: 16px;
+  color: #4c4c4c;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
 }
 
-body {
+.login{
+	background-image: url('file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/pictures/background_register1.png');
+	background-size: 100%;
+}
+
+.main{
+	background-image: url('file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/pictures/background_main.png');
+	background-size: 100%;
+}
+
+.register{
+	background-image: url('file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/pictures/background_register1.png');
+	background-size: 100%;
+}
+
+#container{
+	min-height:100%;
 	position: relative;
-	font-family: Verdana;
-	margin: 0;
-	padding: 0;
-	padding-left: 40px;
-	color: black;
 }
 
-h1{
+#body{
+	position: relative;
 	text-align: center;
-	margin: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 35px;
-}
-h2{
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 20px;
-}
-#language{
-	text-align: right;
-	background-color: #66ff66;
-}
-#logo{
-	position: relative;
-	#margin-bottom: 0;
-	background-color: #66ff66;
-	color: black;
-	height: 250px;
-	padding-top: 50px;
+	background-repeat:no-repeat;
 	padding-left: 20px;
+	padding-top: 100px;
+	padding-right: 1500px 700px;
+	height: 650px;
+}
+
+#footer{
+	position: absolute;
+	bottom: -175px;
+	width: 100%;
+	height: 10%;
+	background: white;
+	font-size: 13px;
+	
+}
+
+#logo{
+	padding-top: 10px;
+	padding-left: 400px;
+	text-align: center;
+	#margin-top: 10px;
+	float: center;
+	display:inline;
+}
+
+#flags{
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 10px;
+	display:inline;
+}
+
+#links{
+	padding-top: 30px;
+	text-align: right;
+	float:right;
+	padding-right: 10px;
+		
 }
 
 
 
-#menu{
-	position:relative;
-	text-align: left-side;
-	background-color: #66ff66;
-	font-color:black;
-	margin-bottom:0;
+a:hover{
+	text-decoration: underline;
+}
+
+:focus {outline:none}
+
+.registerBox {
+  margin: 10px 150px;
+  padding-top: 10px;
+  width: 343px; 
+  height: 400px; 
+  -webkit-border-radius: 8px/7px; 
+  -moz-border-radius: 8px/7px; 
+  border-radius: 8px/7px; 
+  background-color: white; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+}
+
+.loginBox{
+  margin-top: 10px;
+  margin-left: 800px;
+  padding-top:10px;
+  width: 343px; 
+  height: 300px; 
+  -webkit-border-radius: 8px/7px; 
+  -moz-border-radius: 8px/7px; 
+  border-radius: 8px/7px; 
+  background-color: white; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+}
+
+
+form{
+  #margin: 0 30px;
+}
+
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+  margin-top:-40px;
+  margin-bottom: 0px;
+}
+
+
+h2{
+  font-size: 25px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+	
 }
 ul{
+	display:inline;
 	line-height:8px;
 	list-style-type:none;
 	margin:0;
@@ -57,11 +154,11 @@ ul{
 }
 li{
 	#display: inline;
-	float:right;
+	#float:center;
 }
 li a{
 	color:black;
-	text-decoration:none;
+	#text-decoration: underline;
 	display:block;
 	text-align:center;
 	padding: 14px 16px;
@@ -69,29 +166,127 @@ li a{
 
 li a:hover {
     background-color: #555;
-    color: black;
+    color: white;
 }
 
-#content{
-	position: relative;
-	background-color:white;
-	padding-left: 20px;
-	padding-top: 1px;
-	padding-right: 500px;
+#search input[type=text] {
+    width: 200px;
+	box-sizing: border-box;
+    border: 2px solid #black;
+    border-radius: 4px;
+    font-size: 15px;
+    background-image: url('file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/pictures/searchicon.png');
+    background-position: 150px ; 
+	background-size: 20%;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+#search input[type=text]:focus {
+	background-color: white;
+	background-image: none;
+    width: 45%;
+}
+
+#tab {
+	max-width:550px; 
+	width:100%; 
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	height: 300px;
+}
+
+#tab input[type=radio] 
+{
+	display:none;
+}
+
+#tab label {
+	display:block; 
+	float: left;
+	width: 23.333%;
+	color: black;
+	font-size: 15px;
+	padding: 5%;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	font-family: Verdana;
+	background: white;
+}
+
+#tab .tab_content {
+	background: #fff; 
+	width: 90%;
+	display: none;
+	padding: 5%;
+	float: left;
+}
+
+#tab [id^="tab"]:checked + label{
+	background: #80b3ff;
+	color: #fff;
+}
+
+#tab1:checked ~ #tab-content1, 
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3{
+	display:block;
+}
+
+input[type=text],input[type=password]{
+  width: 200px; 
+  height: 39px; 
+  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px; 
+  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  background-color: #fff; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 13px; 
+  padding-left: 10px;
+}
+
+input[type=password]{
+  margin-bottom: 25px;
+}
+
+a.button {
+ font-size: 20px;
+  font-weight: 300;
+  color: white;
+  padding: 6px 25px 6px 25px;
+  float: center;
+  text-decoration: none;
+  width: 100px; height: 50px; 
+  background-color: black; 
+  transition: all 0.1s linear 0s; 
+  top: 50px;
+  position: relative;
+}
+
+a.button:hover {
+  top: 47px;
+  background-color: #e6c300;
 }
 
 
-.news-item h3{
-	font-size: 30px;
-	padding-top: -20px;
-}
 
-.news-item img{
-	float: right;
-	padding-right: 10px;
-	padding-left: 10px;
-}
 
-.news-item .introduction{
-	font-style:italic;
-}
+
+
+
+
+
