@@ -111,6 +111,10 @@ INSERT INTO rating VALUES(3,'haderka', 5, 5,5);
 INSERT INTO rating VALUES(1,'skirma', 4.5, 4,4.3);
 INSERT INTO rating VALUES(3,'skirma', 4.7, 5,3.1);
 
+INSERT INTO rest_image VALUES(1,3,'adega.jpg');
+INSERT INTO rest_image VALUES(2,2,'ode.jpg');
+INSERT INTO rest_image VALUES(3,1,'revioli.png');
+
 /************************************************* TRIGGERS ***********************************************/
 
 CREATE TRIGGER update_rat 
