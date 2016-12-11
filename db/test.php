@@ -4,7 +4,7 @@
     $stmt = $db->prepare('SELECT * FROM restaurant');
     $stmt->execute();  
 
-    $result= $stmt->fetchAll();
+    $result= $stmt->fetchAll();		
 
   foreach( $result as $row) {
     echo '<h1>' . $row['name'] . '</h1>';

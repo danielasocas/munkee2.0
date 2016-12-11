@@ -11,7 +11,7 @@
   }
 
 /* Get restaurant by id */    
-  function getRest($id) {
+  function getRest() {
     global $db;
     
     $stmt = $db->prepare('SELECT * FROM news WHERE id = ?');
