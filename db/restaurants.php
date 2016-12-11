@@ -33,7 +33,7 @@
   function getRestByFood() {
     global $db;
     
-    $stmt = $db->prepare('SELECT * FROM rating
+    $stmt = $db->prepare('SELECT * FROM restaurant
     ORDER BY food_rat DESC LIMIT 3');
     $stmt->execute();  
 
@@ -44,7 +44,7 @@
   function getRestByService() {
     global $db;
     
-    $stmt = $db->prepare('SELECT * FROM rating
+    $stmt = $db->prepare('SELECT * FROM restaurant
     ORDER BY service_rat DESC LIMIT 3');
     $stmt->execute();  
 
@@ -55,7 +55,7 @@
   function getRestByAmbient() {
     global $db;
     
-    $stmt = $db->prepare('SELECT * FROM rating
+    $stmt = $db->prepare('SELECT * FROM restaurant
     ORDER BY ambient_rat DESC LIMIT 3');
     $stmt->execute();  
 
