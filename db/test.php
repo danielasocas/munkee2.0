@@ -1,9 +1,10 @@
-<?php
-  $db = new PDO('sqlite:munkee.db');
+<?php 
+    $db = new PDO('sqlite:munkee.db');
+    
+    $stmt = $db->prepare('SELECT * FROM restaurant');
+    $stmt->execute();  
 
-  $stmt = $db->prepare('SELECT * FROM restaurante');
-  $stmt->execute();
-  $result = $stmt->fetchAll();
+    $result= $stmt->fetchAll();
 
   foreach( $result as $row) {
     echo '<h1>' . $row['name'] . '</h1>';
