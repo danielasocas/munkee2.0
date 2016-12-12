@@ -1,13 +1,13 @@
 			<div id="links">
-				<a href="file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/html/register.html">Register Now</a>
-				<a href="file:///C:/Dropbox/GreenCrazyMunkeeSunshine/Project/html/login.html" style="padding-left: 20px">Login</a>
+				<a href="../actions/registerPage.php">Register Now</a>
+				<a href="../actions/loginPage.php" style="padding-left: 20px">Login</a>
 			</div>
 		</div>
 	</div>
 </div>
-	<div class="register">
-		<div id="body">
-			<div class="registerBox">
+<div class="register">
+	<div id="body">
+		<div class="registerBox">
 			<h2>Registration</h2>
 			<form action="action_register">
 			<hr>
@@ -16,6 +16,4 @@
 				<input type="password" name="name" id="name" placeholder="Password" required/>
 			<a href="#" class="button">Register</a>
 			</form>
-			</div>
-		</div> 
-	</div>
+		</div>

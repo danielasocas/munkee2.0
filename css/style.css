@@ -11,18 +11,33 @@ select {
 }
 
 .login{
-	background-image: url("../pictures/background_register1.png");
+	background-image: url("../pictures/background_registerLogin.png");
 	background-size: 100%;
+	padding-left: 20px;
+	padding-top: 50px;
 }
 
 .main{
 	background-image: url("../pictures/background_main.png");
 	background-size: 100%;
+	padding-left: 20px;
+	padding-top: 50px;
+	background-repeat:no-repeat;
 }
 
 .register{
-	background-image: url("../pictures/background_register1.png");
-	background-size: 90%;
+	background-image: url("../pictures/background_registerLogin.png");
+	background-size: 100%;
+	padding-left: 20px;
+	padding-top: 50px;
+	background-repeat:no-repeat;
+}
+
+.profile {
+	background-image: url("../pictures/background_profile.jpg");
+	background-size: 30%;
+	background-color: #d9d9d9;
+	background-repeat:no-repeat;
 }
 
 #container{
@@ -32,11 +47,8 @@ select {
 
 #body{
 	position: relative;
-	text-align: center;
-	background-repeat:no-repeat;
-	padding-left: 20px;
-	padding-top: 50px;
-	padding-right: 1500px 700px;
+	text-align: center;	
+	padding-right: 1400px 700px;
 	height: 600px;
 }
 
@@ -71,14 +83,27 @@ select {
 	text-align: right;
 	float:right;
 	padding-right: 10px;
+
 		
 }
 
-
-
-a:hover{
-	text-decoration: underline;
+#links a{
+	color: black;
+	text-decoration: none;
 }
+
+#links a:hover{
+	text-decoration: underline;
+	#background-color: blue;
+}
+	
+
+#links li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
 
 :focus {outline:none}
 
@@ -134,40 +159,17 @@ h2{
   padding-bottom: 10px;
 }
 
-a{
-	color: black;
-	text-decoration: none;
+h3{
+  font-size: 15px;
+  font-weight: 100;
+  color: #4c4c4c;
+  font-family: Verdana;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top:10px;
+  padding-bottom: 10px;
 }
 
-a:hover{
-	text-decoration: underline;
-}
-	
-}
-ul{
-	display:inline;
-	line-height:8px;
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	overflow: hidden;
-}
-li{
-	#display: inline;
-	#float:center;
-}
-li a{
-	color:black;
-	#text-decoration: underline;
-	display:block;
-	text-align:center;
-	padding: 14px 16px;
-}
-
-li a:hover {
-    background-color: #555;
-    color: white;
-}
 
 #search input[type=text] {
 	
@@ -235,8 +237,8 @@ li a:hover {
 }
 
 #tab [id^="tab"]:checked + label{
-	background: #80b3ff;
-	color: #fff;
+	background: white;
+	color: white;
 }
 
 #tab1:checked ~ #tab-content1, 
@@ -289,6 +291,37 @@ a.button:hover {
 
 
 
+ul.tabs{ 
+    position: relative;
+	#background-color: #d9d9d9;
+	margin-bottom: 10px;
+}
 
+ul.tabs li {
+    float: left;
+}
+
+ul.tabs li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size:18px;
+}
+
+.profile a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.tabs li a:focus, .active {
+	background-color:#111;
+	#font-color: #F0F8FF;
+}
+
+.tabcontent{
+	display: none;
+	padding: 6px 12px;
+}
 
 
