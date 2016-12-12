@@ -76,7 +76,7 @@
 
 /******************** Search ********************/
 
-/* Searchs for a restaurant by name   
+/*Searchs for a restaurant by name   */
   function searchRestByName($keyword) {
     global $db;
     
@@ -85,6 +85,5 @@
     $stmt->execute(array($word));
     return $stmt->fetchAll();
   }
-*/
 
 ?>

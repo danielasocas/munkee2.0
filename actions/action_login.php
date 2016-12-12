@@ -4,7 +4,7 @@ session_start();
 include_once('../db/connection.php');
 include_once('../db/users.php');
 
-if (userExists($db, $_POST['username'], $_POST['password'])){
+if (userExists( $_POST['username'], $_POST['password'])){
     $_SESSION['username'] = $_POST['username'];
     $_SESSION['user-logged'] = true;
 }
