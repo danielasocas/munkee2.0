@@ -10,7 +10,7 @@
 		<div id="tab-content1" class="tab_content">
 		  <p>
 			<?php foreach( $rest_food as $row) {?>
-				<p class="blah"><?=$row['name']?></p>
+				<p class="name"><?=$row['name']?></p>
 				<p class="food"><?=$row['food_rat']?></p>
 				<img src="http://ipsumimage.appspot.com/300x200,ff7700" alt="300x200">
 				<p class="address"><?=$row['address']?></p>
@@ -20,11 +20,26 @@
 		</div>
 		
 		<div id="tab-content2" class="tab_content">
-		 <p>content2content2content2content2content2content2content2
-		 content2content2content2content2content2</p>
+		 <p>
+		 	<?php foreach( $rest_serv as $row) {?>
+				<p class="name"><?=$row['name']?></p>
+				<p class="food"><?=$row['service_rat']?></p>
+				<img src="http://ipsumimage.appspot.com/300x200,ff7700" alt="300x200">
+				<p class="address"><?=$row['address']?></p>
+				<p class="timetable"><?=$row['timetable']?></p>
+			<?php } ?>
+		  </p>
 		</div>
 		
 		<div id="tab-content3" class="tab_content">
-		 <p>content3content3content3content3content3</p>
+		 <p>
+		 	<?php foreach( $rest_amb as $row) {?>
+				<p class="name"><?=$row['name']?></p>
+				<p class="food"><?=$row['ambient_rat']?></p>
+				<img src="http://ipsumimage.appspot.com/300x200,ff7700" alt="300x200">
+				<p class="address"><?=$row['address']?></p>
+				<p class="timetable"><?=$row['timetable']?></p>
+			<?php } ?>
+		 </p>
 		</div>
 
