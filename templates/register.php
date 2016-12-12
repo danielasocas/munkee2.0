@@ -15,5 +15,7 @@
 				<input type="text" name="name" id="name" placeholder="Username" required/>
 				<input type="password" name="name" id="name" placeholder="Password" required/>
 			<a href="#" class="button">Register</a>
-			</form>
+		</form>
 		</div>
+	</div>
+</div>

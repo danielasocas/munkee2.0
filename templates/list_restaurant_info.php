@@ -40,6 +40,10 @@
 				<p class="address"><?=$row['address']?></p>
 				<p class="timetable"><?=$row['timetable']?></p>
 			<?php } ?>
-		 </p>
+		</p>
+		</div>
+		</div>
+		</div>
+		</div>
 		</div>
 
