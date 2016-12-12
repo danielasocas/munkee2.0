@@ -7,25 +7,39 @@
 		 
 	<input type="radio" name="tabs" id="tab3" checked>
 	<label for="tab3">Ambiente</label>
-		 
-		 <?php foreach ($result as $restaurant) {?>
-			<div id="tab-content1" class="tab_content">
-			<p>
-				<?php foreach ($food as $row) {?>
-					echo '<h1>' . $row['name'] . '</h1>';
-					<h3><?=$row['name']?></h3>
-					<img src="http://ipsumimage.appspot.com/300x200,ff7700" alt="300x200">
-					<p class="food"><?=$row['food_rat']?></p>
-					<p><?=$row['address']?></p>}
-				<?php } ?>
-			</p>
-		 </div>
-		 <?php } ?>
-		 <div id="tab-content2" class="tab_content">
-		 <p>content2content2content2content2content2content2content2
-		 content2content2content2content2content2</p>
-		 </div>
+		<div id="tab-content1" class="tab_content">
+		  <p>
+			<?php foreach( $rest_food as $row) {?>
+				<p class="name"><?=$row['name']?></p>
+				<p class="food"><?=$row['food_rat']?></p>
+				<img src="http://ipsumimage.appspot.com/300x200,ff7700" alt="100x50">
+				<p class="address"><?=$row['address']?></p>
+				<p class="timetable"><?=$row['timetable']?></p>
+			<?php } ?>
+		  </p>
+		</div>
 		
-		 <div id="tab-content3" class="tab_content">
-		 <p>content3content3content3content3content3</p>
-</div>
+		<div id="tab-content2" class="tab_content">
+		 <p>
+		 	<?php foreach( $rest_serv as $row) {?>
+				<p class="name"><?=$row['name']?></p>
+				<p class="food"><?=$row['service_rat']?></p>
+				<img src="http://ipsumimage.appspot.com/300x200,ff7700" alt="100x50">
+				<p class="address"><?=$row['address']?></p>
+				<p class="timetable"><?=$row['timetable']?></p>
+			<?php } ?>
+		  </p>
+		</div>
+		
+		<div id="tab-content3" class="tab_content">
+		 <p>
+		 	<?php foreach( $rest_amb as $row) {?>
+				<p class="name"><?=$row['name']?></p>
+				<p class="food"><?=$row['ambient_rat']?></p>
+				<img src="http://ipsumimage.appspot.com/300x200,ff7700" alt="100x50">
+				<p class="address"><?=$row['address']?></p>
+				<p class="timetable"><?=$row['timetable']?></p>
+			<?php } ?>
+		 </p>
+		</div>
+

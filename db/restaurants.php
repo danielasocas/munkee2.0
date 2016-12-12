@@ -11,7 +11,7 @@
   }
 
 /* Get restaurant by id */    
-  function getRest($id) {
+  function getRest() {
     global $db;
     
     $stmt = $db->prepare('SELECT * FROM news WHERE id = ?');
@@ -33,7 +33,7 @@
   function getRestByFood() {
     global $db;
     
-    $stmt = $db->prepare('SELECT * FROM rating
+    $stmt = $db->prepare('SELECT * FROM restaurant
     ORDER BY food_rat DESC LIMIT 3');
     $stmt->execute();  
 
@@ -44,7 +44,7 @@
   function getRestByService() {
     global $db;
     
-    $stmt = $db->prepare('SELECT * FROM rating
+    $stmt = $db->prepare('SELECT * FROM restaurant
     ORDER BY service_rat DESC LIMIT 3');
     $stmt->execute();  
 
@@ -55,7 +55,7 @@
   function getRestByAmbient() {
     global $db;
     
-    $stmt = $db->prepare('SELECT * FROM rating
+    $stmt = $db->prepare('SELECT * FROM restaurant
     ORDER BY ambient_rat DESC LIMIT 3');
     $stmt->execute();  
 
@@ -76,7 +76,7 @@
 
 /******************** Search ********************/
 
-/* Searchs for a restaurant by name   
+/*Searchs for a restaurant by name   */
   function searchRestByName($keyword) {
     global $db;
     
@@ -85,6 +85,5 @@
     $stmt->execute(array($word));
     return $stmt->fetchAll();
   }
-*/
 
 ?>
