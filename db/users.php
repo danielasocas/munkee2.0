@@ -14,10 +14,20 @@
   function getUserByUsername($username) {
   	global $db;
 
-    $stmt = $db->prepare('SELECT * FROM user WHERE username = ?');
+    $stmt = $db->prepare("SELECT * FROM user WHERE username = ?");
     $stmt->execute(array($username));
+    return $stmt->fetchAll();
+  }
+
+ /* Gets an user by the username */
+  function getUserByEmail($email) {
+    global $db;
+
+    $stmt = $db->prepare('SELECT * FROM user WHERE email = ?');
+    $stmt->execute(array($email));
     return $stmt->fetch();
   }
+ 
 
 /* Create a new user */
   function createUser($username, $email,$name, $password, $birthday) {
