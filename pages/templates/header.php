@@ -17,6 +17,6 @@
 			<img src="../pictures/united_Kingdom.png" style="width:2%"> 
 			<img src="../pictures/germany.png" style="width:2%"> 
 		<div id="logo">
-		<a href="actions/mainPage.php">
+		<a href="mainPage.php">
 		<img src="../pictures/logo.png" style="width:20%"></a>
 	

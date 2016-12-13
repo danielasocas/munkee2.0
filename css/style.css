@@ -150,7 +150,7 @@ h1 {
 
 
 h2{
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 300;
   color: #4c4c4c;
   text-align: center;
@@ -159,14 +159,16 @@ h2{
 }
 
 h3{
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 100;
   color: #4c4c4c;
   font-family: Verdana;
   text-align: center;
+  padding-top: 80px;
+  padding-bottom: -500px;
   margin-bottom: 0px;
-  margin-top:10px;
-  padding-bottom: 10px;
+  #margin-top:20px;
+  #padding-bottom: 10px;
 }
 
 
@@ -197,7 +199,7 @@ h3{
 }
 
 #tab {
-	max-width:550px; 
+	max-width:700px; 
 	width:100%; 
 	position: absolute; 
 	top: 50%;
@@ -233,10 +235,14 @@ h3{
 	display: none;
 	padding: 5%;
 	float: left;
+	
 }
 
+
+
+
 #tab [id^="tab"]:checked + label{
-	background: black;
+	background: #9fc4c6;
 	color: white;
 }
 
@@ -244,6 +250,7 @@ h3{
 #tab2:checked ~ #tab-content2,
 #tab3:checked ~ #tab-content3{
 	display:block;
+	
 }
 
 input[type=text],input[type=password]{
@@ -321,6 +328,39 @@ ul.tabs li a:focus, .active {
 .tabcontent{
 	display: none;
 	padding: 6px 12px;
+}
+
+
+
+p.name{
+	text-align: center;
+	font-size: 30px;
+}
+
+p.food{
+	font-size: 30px;
+	text-align:right;
+	padding-right: 110px;
+	padding-top: 0px;
+}
+
+p.address{
+	text-align: right;
+}
+
+p.timetable{
+	text-align:right;
+	padding-bottom: 120px;
+}
+
+img.food {
+	margin-top: 0px;
+	#margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	text-align: left;
 }
 
 
