@@ -15,17 +15,19 @@
   	global $db;
 
     $stmt = $db->prepare("SELECT * FROM user WHERE username = ?");
+    #$stmt->bind_param(':username',$username); 
     $stmt->execute(array($username));
     return $stmt->fetchAll();
   }
 
  /* Gets an user by the username */
-  function getUserByEmail($email) {
+function getUserByEmail($email) {
     global $db;
 
-    $stmt = $db->prepare('SELECT * FROM user WHERE email = ?');
-    $stmt->execute(array($email));
-    return $stmt->fetch();
+    $stmt = $db->prepare("SELECT * FROM user WHERE email = ?");
+    #$stmt->bind_param(':username',$username); 
+    $stmt->execute(array($username));
+    return $stmt->fetchAll();
   }
  
 
