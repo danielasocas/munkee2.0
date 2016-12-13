@@ -13,7 +13,7 @@
         if (isset($_SESSION['username']))
             $user = getUserByUsername( $_SESSION['username']);
         
-        $rest_food = getRestByFood();
+      $rest_food = getRestByFood();
   		$rest_serv = getRestByService();
   		$rest_amb = getRestByAmbient();
     }
@@ -27,3 +27,4 @@
   include_once('templates/footer.php');
 
 ?>
+
