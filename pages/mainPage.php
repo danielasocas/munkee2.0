@@ -21,9 +21,9 @@
         die($e->getMessage());
     }
 
-  include_once("../templates/header.php");  
-  include_once ('../templates/search.php');
-  include_once("../templates/list_restaurant_info.php");  
-  include_once("../templates/footer.php");
+  include_once("/templates/header.php");  
+  include_once ('/templates/search.php');
+  include_once("/templates/list_restaurant_info.php");  
+  include_once("/templates/footer.php");
 
 ?>

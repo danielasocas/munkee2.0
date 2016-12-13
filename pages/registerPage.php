@@ -3,9 +3,7 @@ session_start();
 
 include_once('/templates/header.php');
 
-include_once('/templates/login.php');
-
-include_once('/templates/login_action.php');
+include_once('/templates/register.php');
 
 include_once('/templates/footer.php');
 

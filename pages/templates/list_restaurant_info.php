@@ -5,7 +5,7 @@
 	<input type="radio" name="tabs" id="tab2">
 	<label for="tab2">Service</label>
 		 
-	<input type="radio" name="tabs" id="tab3" checked>
+	<input type="radio" name="tabs" id="tab3">
 	<label for="tab3">Ambiente</label>
 		<div id="tab-content1" class="tab_content">
 		  <p>
