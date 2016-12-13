@@ -1,4 +1,3 @@
-
 <div id="tab"> 
 	<input type="radio" name="tabs" id="tab1" checked>
 	<label for="tab1">Food</label>
