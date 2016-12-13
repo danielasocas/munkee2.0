@@ -22,7 +22,7 @@
 				<input type="text" name="email" id="email" placeholder="Email" required/>
 				<input type="text" name="username" id="username" placeholder="Username" required/>
 				<input type="password" name="password" id="password" placeholder="Password" required/>
-				<br>
+				
 				<input id="buttonRegister" class="button" type="submit" value="Register" >
 		</form>
 		</div>

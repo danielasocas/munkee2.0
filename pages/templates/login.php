@@ -13,9 +13,8 @@
 			<hr>
 				<input type="text" name="name" id="name" placeholder="Email" required/>
 				<input type="text" name="name" id="name" placeholder="Password" required/>
-					<div class="LoginButton">
-						<a href="profilePage.php" class="button">Login</a>
-					</div>
+				
+				<input id="buttonRegister" class="button" type="submit" value="Login" >
 			</form>
 		</div>
 	</div>
