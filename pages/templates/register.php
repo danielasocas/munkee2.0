@@ -1,6 +1,6 @@
 			<div id="links">
-				<a href="/actions/registerPage.php">Register Now</a>
-				<a href="/actions/loginPage.php" style="padding-left: 20px">Login</a>
+				<a href="registerPage.php">Register Now</a>
+				<a href="loginPage.php" style="padding-left: 20px">Login</a>
 			</div>
 		</div>
 	</div>
@@ -9,7 +9,7 @@
 	<div id="body">
 		<div class="registerBox">
 			<h2>Registration</h2>
-			<form action="action_register">
+			<form action="actions/action_register">
 			<hr>
 				<input type="text" name="name" id="name" placeholder="Email" required/>
 				<input type="text" name="name" id="name" placeholder="Username" required/>

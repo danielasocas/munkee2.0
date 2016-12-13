@@ -236,7 +236,7 @@ h3{
 }
 
 #tab [id^="tab"]:checked + label{
-	background: white;
+	background: black;
 	color: white;
 }
 
@@ -292,7 +292,7 @@ a.button:hover {
 
 ul.tabs{ 
     position: relative;
-	background-color: #d9d9d9;
+	#background-color: #d9d9d9;
 	margin-bottom: 10px;
 }
 

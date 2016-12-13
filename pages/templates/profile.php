@@ -10,6 +10,7 @@
  </head>
 
 <body>
+<script src="../scripts/profil_java.js"></script>
 	<div id="header">
 		<div id="flags">
 			<img src="../pictures/portugal.png" style="width:2%; padding-top: 10px"> 

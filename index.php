@@ -1,3 +1,3 @@
 <?php
-header('Location: actions/mainPage.php');
+header('Location: pages/mainPage.php');
 ?>
