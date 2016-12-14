@@ -88,32 +88,7 @@ select {
 
 :focus {outline:none}
 
-.registerBox {
-  margin: 10px 150px;
-  padding-top: 10px;
-  width: 343px; 
-  height: 400px; 
-  -webkit-border-radius: 8px/7px; 
-  -moz-border-radius: 8px/7px; 
-  border-radius: 8px/7px; 
-  background-color: white; 
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-}
 
-.loginBox{
-  margin-top: 10px;
-  margin-left: 800px;
-  padding-top:10px;
-  width: 343px; 
-  height: 300px; 
-  -webkit-border-radius: 8px/7px; 
-  -moz-border-radius: 8px/7px; 
-  border-radius: 8px/7px; 
-  background-color: white; 
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-}
 
 
 form{
@@ -153,31 +128,7 @@ h3{
 }
 
 
-#search input[type=text] {
-	
-    width: 200px;
-	margin-bottom: 10px;
-	box-sizing: border-box;
-    border: 2px solid #black;
-    border-radius: 4px;
-    font-size: 15px;
-    background-image: url("../pictures/searchicon.png");
-    background-position: 150px ; 
-	background-size: 20%;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
 
-/* When the input field gets focus, change its width to 100% */
-#search input[type=text]:focus {
-	background-color: white;
-	background-image: none;
-    width: 45%;
-}
 
 #tab {
 	max-width:700px; 
@@ -232,6 +183,7 @@ h3{
 #tab3:checked ~ #tab-content3{
 	display:block;
 	
+	
 }
 
 input[type=text],input[type=password]{
@@ -278,7 +230,9 @@ a.button{
 	
 }
 
-
+p.tab_content{
+	
+}
 
 
 ul.tabs{ 

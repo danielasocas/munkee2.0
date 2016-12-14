@@ -1,52 +1,45 @@
-<!DOCTYPE html>
-<!-- HTML5 Restaurant website project. Daniela Socas Gil & Katja Hader  -->
-<html lang="en-us">
-
-<head>
- <meta name="Daniela S. Gil & Katja Hader" content="Restaurant Advisor"  charset="utf-8">      
- <title>Munkee Advisor</title>
- <link rel="stylesheet" href="../css/style_profile.css">
- <link rel="stylesheet" href="../css/reset.css">
- </head>
-
-<body>
-<script src="../scripts/profil_java.js"></script>
-	<div id="header">
-		<div id="flags">
-			<img src="../pictures/portugal.png" style="width:2%; padding-top: 10px"> 
-			<img src="../pictures/spain.png" style="width:2%"> 
-			<img src="../pictures/united_Kingdom.png" style="width:2%"> 
-			<img src="../pictures/germany.png" style="width:2%"> 
-		<div id="logo">
-		<a href="mainPage.php">
-		<img src="../pictures/logo.png" style="width:20%"></a>
-<div id="links">
-				<a href="mainPage.php">Logout</a>
+	<div class="profile">
+		<div id="body">
+			<div id="tab"> 
+				<input type="radio" name="tabs" id="tab1">
+				<label for="tab1">My Profile</label>
+				<input type="radio" name="tabs" id="tab2" checked>
+				<label for="tab2">My Restaurants</label>
+		 
+				<div id="tab-content1" class="tab_content">
+					<p>
+						<?php foreach( $user_data as $row) {?>
+							<p class="Username"><?=$row['username']?></p>
+							<p class="EMail"><?=$row['email']?></p>
+							<p class="name"><?=$row['name']?></p>
+						<?php } ?>
+					</p>
+					<a href="editprofilePage.php" class="button">Edit Profile</a>
+				</div>
+			
+				<div id="tab-content2" class="tab_content">
+					<p>
+		 	<!--?php foreach( $user_data as $row) {?>
+				<p class="Username"><?=$row['username']?></p>
+				<p class="EMail"><?=$row['email']?></p>
+				<p class="name"><?=$row['name']?></p>
+					<form action="actions/action_login.php" method="post"-->
+			<!--hr-->
+					<input type="text" name="name" id="name" placeholder="Name" required/>
+					<br>
+					<input type="text" name="name" id="name" placeholder="Address" required/>
+					<br>
+					<input type="text" name="name" id="name" placeholder="Post Code" required/>
+					<br>
+					<input type="text" name="name" id="name" placeholder="Type" required/>
+					<br>
+					<input type="text" name="name" id="name" placeholder="Timetable" required/>
+					<br>
+					</p>
+					<a href="profilePage.php" class="button">Add</a>
+					<a href="profilePage.php" class="button">Back</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-	<div id="body">
-	
-	<input type="text" name="email" id="email" placeholder="Email" required/>
-	
-	<ul class= "tabs">
-				<li><a href="javascript:void(0)" class="tablinks" class="active"
-			onclick="openContent(event, 'user_data')">My Profile</a></li>
-				<li><a href="javascript:void(0)" class="tablinks"
-			onclick="openContent(event, 'restaurant_data')">My Restaurants</a></li>
-		</ul>
-		<div id="user_data" class="tabcontent" >
-			<h1>Username</h1>
-			<h3>E-mail Address</h3>
-		</div>
-		<div id="restaurant_data" class="tabcontent" class="active">
-			<h1>Username</h1>
-			<h3>My Restaurants<h3>
-			<input class="button" type="submit" value="Add Restaurant" >
-		</div>
-		<h1>helloooo</h1>
-	</div>
-<h1>helloooo</h1>
-	
