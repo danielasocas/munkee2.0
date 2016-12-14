@@ -140,7 +140,7 @@ form{
 
 
 h1 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 300;
   color: #4c4c4c;
   text-align: auto;
@@ -150,7 +150,7 @@ h1 {
 
 
 h2{
-  font-size: 32px;
+  font-size: 15px;
   font-weight: 300;
   color: #4c4c4c;
   text-align: auto;
@@ -159,16 +159,15 @@ h2{
 }
 
 h3{
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 100;
   color: #4c4c4c;
   font-family: Verdana;
-  text-align: center;
+  text-align: left;
   padding-top: 80px;
+  padding-left: 30px;
   padding-bottom: -500px;
   margin-bottom: 0px;
-  #margin-top:20px;
-  #padding-bottom: 10px;
 }
 
 
@@ -200,7 +199,7 @@ h3{
 
 #tab {
 	max-width:700px; 
-	width:100%; 
+	width:70%; 
 	position: absolute; 
 	top: 50%;
 	left: 50%;
@@ -311,7 +310,7 @@ ul.tabs li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-	font-size:18px;
+	font-size:10px;
 }
 
 .profile a:hover:not(.active) {
@@ -323,42 +322,37 @@ ul.tabs li a:focus, .active {
 	#font-color: #F0F8FF;
 }
 
-.tabcontent{
-	display: none;
-	padding: 6px 12px;
-}
-
 
 
 p.name{
 	text-align: center;
-	font-size: 30px;
+	font-size: 15px;
 }
 
 p.food{
-	font-size: 30px;
+	font-size: 15px;
+	color: yellow;
 	text-align:right;
-	padding-right: 110px;
-	padding-top: 0px;
+	#padding-top: -10px;
+	margin-top: -10px;
+	padding-right:150px;
 }
 
 p.address{
+	font-size: 10px;
+	margin-top: -10px;
 	text-align: right;
+	padding-right:150px;
 }
 
 p.timetable{
+	margin-top: -10px;
+	font-size: 10px;	
 	text-align:right;
-	padding-bottom: 120px;
+	padding-bottom: 20px;
+	padding-right:150px;
 }
 
-img.food {
-	margin-top: 0px;
-	#margin-bottom: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	text-align: left;
-}
+
 
 

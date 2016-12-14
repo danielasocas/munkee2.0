@@ -1,12 +1,14 @@
 <?php
 session_start();
-$_SESSION['incorrectLogin_flag']=0;
+$_SESSION['loginFail']=0;
 $_SESSION['invalid_user'] = 0;
-$_SESSION['page'] = 'mainPage.php';
+$_SESSION['page'] = 'profilePage.php';
 
-#include_once ('/templates/header.php');
 
+	
 include_once ('/templates/profile.php');
+
+include_once ('/actions/action_profile.php');
 
 include_once('/templates/footer.php');
 ?>

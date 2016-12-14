@@ -6,7 +6,7 @@ $_SESSION['page'] = 'profilePage.php';
 
 
 	
-include_once ('/templates/addRestaurant.php');
+include_once ('/templates/editprofile.php');
 
 include_once ('/actions/action_profile.php');
 
