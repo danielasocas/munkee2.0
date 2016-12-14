@@ -4,10 +4,13 @@
 <head>
 	<meta name="Daniela S. Gil &amp; Katja Hader" content="Restaurant Advisor"  charset="utf-8">      
 	<title>Munkee Advisor</title>
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style_profile.css">
 	<link rel="stylesheet" href="../css/reset.css">
 </head>
 <body>
+	<script src="../../scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../../scripts/jquery.form.min.js"></script>
+	<script src="../../scripts/script.js"></script>
 	<div id="header">
 		<div id="flags">
 			<img src="../pictures/portugal.png" style="width:2%; padding-top: 10px"> 

@@ -1,13 +1,5 @@
-			<div id="error">
-				<?php
-					$invalid_user = $_SESSION['invalid_user'];
-					if($invalid_user) {
-					echo '<p>Invalid username/email. Please try again with a different one.</p>';
-				< ?>
-			</div>  
-			</div>
-		</div>
-	</div>
+
+			
 	<div class="register">
 		<div id="body">
 			<div class="registerBox">

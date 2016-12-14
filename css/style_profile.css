@@ -11,20 +11,13 @@ select {
 }
 
 
-
+/*Background/Content*/
 .profile{
 	background-image: url("../pictures/Unbenannt.png");
 	background-size: 100%;
-	
 	padding-left: 20px;
 	padding-top: 50px;
 	background-repeat:no-repeat;
-}
-
-
-#container{
-	min-height:100%;
-	position: relative;
 }
 
 #body{
@@ -84,43 +77,13 @@ select {
     color: white;
 }
 
-
-
 :focus {outline:none}
-
-.registerBox {
-  margin: 10px 150px;
-  padding-top: 10px;
-  width: 343px; 
-  height: 400px; 
-  -webkit-border-radius: 8px/7px; 
-  -moz-border-radius: 8px/7px; 
-  border-radius: 8px/7px; 
-  background-color: white; 
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-}
-
-.loginBox{
-  margin-top: 10px;
-  margin-left: 800px;
-  padding-top:10px;
-  width: 343px; 
-  height: 300px; 
-  -webkit-border-radius: 8px/7px; 
-  -moz-border-radius: 8px/7px; 
-  border-radius: 8px/7px; 
-  background-color: white; 
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-}
-
 
 form{
   #margin: 0 30px;
 }
 
-
+/*header Styles*/
 h1 {
   font-size: 20px;
   font-weight: 300;
@@ -153,32 +116,8 @@ h3{
 }
 
 
-#search input[type=text] {
-	
-    width: 200px;
-	margin-bottom: 10px;
-	box-sizing: border-box;
-    border: 2px solid #black;
-    border-radius: 4px;
-    font-size: 15px;
-    background-image: url("../pictures/searchicon.png");
-    background-position: 150px ; 
-	background-size: 20%;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
 
-/* When the input field gets focus, change its width to 100% */
-#search input[type=text]:focus {
-	background-color: white;
-	background-image: none;
-    width: 45%;
-}
-
+/*Content Box with tabs*/
 #tab {
 	max-width:700px; 
 	width:70%; 
@@ -219,9 +158,6 @@ h3{
 	
 }
 
-
-
-
 #tab [id^="tab"]:checked + label{
 	background: #d55d5d;
 	color: white;
@@ -231,9 +167,9 @@ h3{
 #tab2:checked ~ #tab-content2,
 #tab3:checked ~ #tab-content3{
 	display:block;
-	
 }
 
+/*input Field Style*/
 input[type=text],input[type=password]{
   width: 200px; 
   height: 39px; 
@@ -254,6 +190,7 @@ input[type=password]{
   margin-bottom: 25px;
 }
 
+/*Button Design*/
 .button {
   font-size: 15px;
   #font-weight: 300;
@@ -278,27 +215,24 @@ a.button{
 	
 }
 
-
-
-
-ul.tabs{ 
-    position: relative;
-	#background-color: #d9d9d9;
-	margin-bottom: 10px;
+/*Logout Link*/
+.logout{
+  font-size: 15px;
+  color: black;
+  padding: 0;
+  margin-top: -10px;
+  border: none;
+  background:none;
+  text-decoration: none;
 }
 
-ul.tabs li {
-    float: left;
+.logout:hover{
+	text-decoration: underline;
+	cursor: pointer;
 }
 
-ul.tabs li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-	font-size:10px;
-}
+/*
+
 
 .profile a:hover:not(.active) {
     background-color: #d55d5d;
@@ -309,37 +243,5 @@ ul.tabs li a:focus, .active {
 	#font-color: #F0F8FF;
 }
 
-
-
-p.name{
-	text-align: center;
-	font-size: 15px;
-}
-
-p.food{
-	font-size: 15px;
-	color: yellow;
-	text-align:right;
-	#padding-top: -10px;
-	margin-top: -10px;
-	padding-right:150px;
-}
-
-p.address{
-	font-size: 10px;
-	margin-top: -10px;
-	text-align: right;
-	padding-right:150px;
-}
-
-p.timetable{
-	margin-top: -10px;
-	font-size: 10px;	
-	text-align:right;
-	padding-bottom: 20px;
-	padding-right:150px;
-}
-
-
-
+*/
 
