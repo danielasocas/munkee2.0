@@ -10,10 +10,16 @@
 
 
   try {
-        if (isset($_SESSION['username']))
+        if (isset($_SESSION['username'])){
             $user = getUserByUsername( $_SESSION['username']);
+			include_once('templates/header_logout.php');  
+		}else{
+					include_once('templates/header_login.php');  
+		}
+		
+		
         
-      $rest_food = getRestByFood();
+		$rest_food = getRestByFood();
   		$rest_serv = getRestByService();
   		$rest_amb = getRestByAmbient();
     }
@@ -21,7 +27,6 @@
         die($e->getMessage());
     }
 
-  include_once('templates/header.php');  
   include_once ('templates/search.php');
   include_once('templates/list_restaurant_info.php');  
   include_once('templates/footer.php');

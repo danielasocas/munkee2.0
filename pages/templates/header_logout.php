@@ -17,4 +17,11 @@
 			<div id="logo">
 				<a href="mainPage.php">
 				<img src="../pictures/logo.png" style="width:20%"></a>
-	
+					<div id="links">
+						<form action="actions/action_logout.php" method="post">
+							<input id="buttonLogout" class="logout" type="submit" value="Logout" >
+						</form>
+					</div>
+			</div>
+		</div>
+	</div>		

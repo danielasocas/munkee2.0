@@ -4,7 +4,7 @@ $_SESSION['loginFail']=0;
 $_SESSION['invalid_user'] = 0;
 $_SESSION['page'] = 'profilePage.php';
 
-
+include_once ('/templates/header_logout.php');
 	
 include_once ('/templates/addRestaurant.php');
 

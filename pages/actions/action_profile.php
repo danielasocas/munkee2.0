@@ -7,8 +7,10 @@
   include_once("../db/connection.php");
   include_once("../db/restaurants.php");
   include_once("../db/users.php");
+  
+include_once('/templates/header_logout.php');
 
-  include_once('../templates/profile.php');
+  include_once('/templates/profile.php');
   try {
         if (isset($_SESSION['username']))
             $user = getUserByUsername( $_SESSION['username']);
@@ -19,5 +21,5 @@
 
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 
-include_once('../templates/footer.php');
+include_once('/templates/footer.php');
 ?>

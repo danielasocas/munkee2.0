@@ -1,6 +1,3 @@
-				<div id="links">
-					<a href="registerPage.php">Register Now</a>
-					<a href="loginPage.php" style="padding-left: 20px">Login</a>
 				</div>
 			</div>
 		</div>
